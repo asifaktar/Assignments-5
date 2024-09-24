@@ -11,14 +11,14 @@
     <nav class="sticky top-0">
         <div class="bg-[#F9F7F3] ">
             <div class="w-[85%] mx-auto flex justify-evenly pt-6 pb-8">
-                <button class=" hover:bg-slate-400 bg-[rgb(180,244,97)] px-6 py-2 rounded-md text-gray-900 font-bold border-none">Blog</button>
+                <button id="btn-blog" class=" hover:bg-slate-400 bg-[rgb(180,244,97)] px-6 py-2 rounded-md text-gray-900 font-bold border-none">Blog</button>
                 <div class="inline-flex gap-2">
                     <img class="h-8" src="assets/logo.png" alt="please wite">
                     <h3 class="text-[#111111] font-bold text-xl">Donate Bangladesh</h3>
                 </div>
                 <div class="inline-flex gap-2">
                     <img class="h-6" src="assets/coin.png" alt="">
-                    <h3 class="text-[#111111B3] font-semibold">5500</h3>
+                    <h3 id="display-amount" class="text-[#111111B3] font-semibold">5500</h3>
                     <p class="text-[#111111B3] font-semibold">BDT</p>
                 </div>
             </div>
@@ -48,15 +48,15 @@
                     <div class="grid justify-start py-6 lg:pt-0">
                         <button class="bg-gray-200 grid grid-cols-3 items-center rounded-md py- px-2 font-normal text-[#111111B3] text-2xl">
                             <img src="assets/coin.png" alt="">
-                            <h3>0</h3>
+                            <p id="noa-display-amount" class="-ml-6">0</p>
                             <p>BDT</p>
                         </button>
                     </div>
                     <h2 class="text-[#111111] font-bold text-lg pb-4">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class=" font-medium text-sm text-gray-500"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="grid grid-cols-1 pt-4">
-                        <input class="bg-[#FFFFFF] border border-gray-300  pl-4 py-2 rounded-md" type="text" placeholder="Write Donation Amount">
-                        <button class="mt-6 hover:bg-slate-400 bg-[rgb(180,244,97)] px-6 py-2 rounded-md text-gray-900 font-bold ">Donate Now</button>
+                        <input id="input-noakhali" class="bg-[#FFFFFF] border border-gray-300  pl-4 py-2 rounded-md" type="text" placeholder="Write Donation Amount">
+                        <button id="btn-noakhali" class="mt-6 hover:bg-slate-400 bg-[rgb(180,244,97)] px-6 py-2 rounded-md text-gray-900 font-bold ">Donate Now</button>
                         </div>
                 </div>
             </div>
@@ -69,15 +69,15 @@
                     <div class="grid justify-start py-6 lg:pt-0">
                         <button class="bg-gray-200 grid grid-cols-3 items-center rounded-md py- px-2 font-normal text-[#111111B3] text-2xl">
                             <img src="assets/coin.png" alt="">
-                            <h3>600</h3>
+                            <p id="display-feni">0</p>
                             <p>BDT</p>
                         </button>
                     </div>
                     <h2 class="text-[#111111] font-bold text-lg pb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class=" font-medium text-sm text-gray-500"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="grid grid-cols-1 pt-4">
-                        <input class="bg-[#FFFFFF] border border-gray-300  pl-4 py-2 rounded-md" type="text" placeholder="Write Donation Amount">
-                        <button class="mt-6 hover:bg-slate-400 bg-[rgb(180,244,97)] px-6 py-2 rounded-md text-gray-900 font-bold ">Donate Now</button>
+                        <input id="input-feni" class="bg-[#FFFFFF] border border-gray-300  pl-4 py-2 rounded-md" type="text" placeholder="Write Donation Amount">
+                        <button id="btn-feni" class="mt-6 hover:bg-slate-400 bg-[rgb(180,244,97)] px-6 py-2 rounded-md text-gray-900 font-bold ">Donate Now</button>
                         </div>
                 </div>
             </div>
@@ -107,5 +107,7 @@
     <footer>
         <div class="bg-[#F9F7F3] h-20"></div>
     </footer>
+    <script src="js/addmoney.js"></script>
+    <script src="js/utiliti.js"></script>
 </body>
 </html>
