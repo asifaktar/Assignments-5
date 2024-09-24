@@ -1,9 +1,12 @@
-// step no 1 blog function;
+//step no 1 blog function;
 document.getElementById("btn-blog")
     .addEventListener("click", function(event){
         event.preventDefault();
+        
         window.location.href = "/faq.html";
+        
 });
+
 
 // step no 2 input function;
 document.getElementById("btn-noakhali")
@@ -33,6 +36,15 @@ document.getElementById("btn-noakhali")
             const toAdd = inputMoney + donateDisplayAmount1;
             document.getElementById("display-amount").innerText = toMinus;
             document.getElementById("noa-display-amount").innerText = toAdd;
+
+            //history function;
+            const history = document.getElementById("history-1").innerText;
+            const p = document.createElement("p");
+            const d = new Date();
+             
+            p.innerText = `${history} Date ${d}`;
+
+            document.getElementById("history-section").appendChild(p);
         };
 
 });
@@ -65,6 +77,14 @@ document.getElementById("btn-feni")
             const toAdd = inputMoney + donateDisplayAmount2;
             document.getElementById("display-amount").innerText = toMinus;
             document.getElementById("display-feni").innerText = toAdd;
+            
+            //history function;
+            const history = document.getElementById("history-2").innerText;
+            const p = document.createElement("p");
+             const date = new Date();
+            p.innerText = `${history} Date ${date}`;
+
+            document.getElementById("history-section").appendChild(p);
         };
 
 });
@@ -99,35 +119,27 @@ document.getElementById("btn-injured")
             document.getElementById("display-injured").innerText = toAdd;
 
             //history function;
-            
+            const history = document.getElementById("history-3").innerText;
+            const p = document.createElement("p");
+             const de = new Date()
+            p.innerText = `${history} Date ${de}`;
+
+            document.getElementById("history-section").appendChild(p);
+
         };
 
 });
 
-//history function;
-// const historyBtn = document.getElementById("btn-history").addEventListener("click", function(){
-//     console.log("hmmm")
+//main btn section;
+document.getElementById("btn-history").addEventListener("click", function(){
     
+    getHiddenById("his");
+});
 
-//     //getHiddenById("history-section")
-     const injBd = document.getElementById("injured-bd").innerText;
-     console.log(injBd)
-     document.createElement('p');
-     p.innerText = `
-     ${inputMoney} ${injBd}
-        `
-
-    document.getElementById("history-section").appendChild(p);
-// })
-
-// const donateBtn = document.getElementById("donate-history").addEventListener("click", function(){
-//     console.log("hoise")
-//    const have = getHiddenById("main-section");
-// })
-
-////////////
-
-
+document.getElementById("donate-history").addEventListener("click", function(){
+    
+    getHiddenById("main-section");
+});
 
 
 
