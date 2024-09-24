@@ -15,9 +15,21 @@ function getInputMoney(id){
     return toInputNumber;
 };
 
+// history section ;
+// function getHistoryById(){
+//     const div = document.createElement("div");
+//     const time = new Date(div);
+//     console.log(time)
+// }
 
+//hidden function;
+function getHiddenById(id){
+    document.getElementById("history-section").classList.add("hidden");
+    document.getElementById("main-section").classList.add("hidden");
 
-
+    document.getElementById(id).classList.remove("hidden");
+    
+}
 
 
 

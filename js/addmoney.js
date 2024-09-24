@@ -69,7 +69,63 @@ document.getElementById("btn-feni")
 
 });
 
+// injured function;
+document.getElementById("btn-injured")
+    .addEventListener("click", function(event){
+        event.preventDefault();
 
+        const inputMoney = getInputMoney("input-injured");
+        const displayMoney = getBlogFaq("display-amount");
+        const donateDisplayAmount3 = getBlogFaq("display-injured");
+
+        //check condition ;
+
+        if(isNaN(inputMoney)){
+            alert("Please enter number!");
+            return;
+        }
+        else if(displayMoney < inputMoney){
+            alert("Please check your account balance!");
+            return;
+        };
+
+        if(inputMoney + donateDisplayAmount3){
+            alert('Thank you for donate.');
+
+        //     //display amount function;
+             const toMinus = displayMoney - inputMoney;
+            const toAdd = inputMoney + donateDisplayAmount3;
+            document.getElementById("display-amount").innerText = toMinus;
+            document.getElementById("display-injured").innerText = toAdd;
+
+            //history function;
+            
+        };
+
+});
+
+//history function;
+// const historyBtn = document.getElementById("btn-history").addEventListener("click", function(){
+//     console.log("hmmm")
+    
+
+//     //getHiddenById("history-section")
+     const injBd = document.getElementById("injured-bd").innerText;
+     console.log(injBd)
+     document.createElement('p');
+     p.innerText = `
+     ${inputMoney} ${injBd}
+        `
+
+    document.getElementById("history-section").appendChild(p);
+// })
+
+// const donateBtn = document.getElementById("donate-history").addEventListener("click", function(){
+//     console.log("hoise")
+//    const have = getHiddenById("main-section");
+// })
+
+////////////
 
 
 
