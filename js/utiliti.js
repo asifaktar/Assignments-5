@@ -20,6 +20,7 @@ function getInputMoney(id){
 function getHiddenById(id){
     document.getElementById("his").classList.add("hidden");
     document.getElementById("main-section").classList.add("hidden");
+    
 
     document.getElementById(id).classList.remove("hidden");
 }

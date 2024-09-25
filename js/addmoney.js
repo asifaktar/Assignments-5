@@ -1,12 +1,11 @@
 //step no 1 blog function;
 document.getElementById("btn-blog")
     .addEventListener("click", function(event){
-        event.preventDefault();
+        event.preventDefault()
         
         window.location.href = "./blog.html";
         
 });
-
 
 // step no 2 input function;
 document.getElementById("btn-noakhali")
@@ -18,7 +17,6 @@ document.getElementById("btn-noakhali")
         const donateDisplayAmount1 = getBlogFaq("noa-display-amount");
 
         //check condition ;
-// console.log()
         if(isNaN(inputMoney)){
             alert("Please enter number!");
             return;
