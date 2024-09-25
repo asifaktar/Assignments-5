@@ -3,7 +3,7 @@ document.getElementById("btn-blog")
     .addEventListener("click", function(event){
         event.preventDefault();
         
-        window.location.href = "/faq.html";
+        window.location.href = "./faq.html";
         
 });
 
@@ -18,7 +18,7 @@ document.getElementById("btn-noakhali")
         const donateDisplayAmount1 = getBlogFaq("noa-display-amount");
 
         //check condition ;
-
+// console.log()
         if(isNaN(inputMoney)){
             alert("Please enter number!");
             return;
