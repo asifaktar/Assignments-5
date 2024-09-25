@@ -59,7 +59,7 @@ document.getElementById("btn-feni")
         const donateDisplayAmount2 = getBlogFaq("display-feni");
 
         //check condition ;
-
+// console.log()
         if(isNaN(inputMoney)){
             alert("Please enter number!");
             return;
